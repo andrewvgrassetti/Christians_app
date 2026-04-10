@@ -63,8 +63,6 @@ class PKPlotter:
 
         # Predicted curve
         if predicted is not None:
-            # Generate smooth prediction curve
-            t_smooth = np.linspace(min(time), max(time), 200)
             fig.add_trace(
                 go.Scatter(
                     x=time,
